@@ -17,4 +17,4 @@ Just change following variables in `start.sh`:
 - `AUDIO_ENCODER` (optional)
 
 ## Start
-`./start.sh` :)
+`sh start.sh` :)
