@@ -3,7 +3,7 @@
 
 ## Requirements
 - ffmpeg
-- a PC (tested on Arch Linux)
+- a PC (tested on Arch Linux and Debian 10)
 
 ## Configuration
 Just change following variables in `start.sh`:
