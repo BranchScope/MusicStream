@@ -9,7 +9,6 @@
 Just change following variables in `start.sh`:
 - `YOUTUBE_URL` (required)
 - `YOUTUBE_KEY` (required)
-- `THREADS` (optional, but i recommend to change it)
 - `VIDEO_SOURCE` (optional)
 - `QUAL` (optional)
 - `VBR` (optional)

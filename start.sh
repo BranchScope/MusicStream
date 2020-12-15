@@ -7,7 +7,6 @@ YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2" #usually it's this, but change if 
 YOUTUBE_KEY="" #insert here your youtube key
 VIDEO_SOURCE="background.png" #default background you can see in the main path, change it if you want
 AUDIO_ENCODER="aac" #audio encoder :)
-THREADS="5" #put cores +1
 
 echo "Updating the list..."
 rm list.txt
@@ -29,5 +28,5 @@ ffmpeg \
  -i list.txt \
  -loop -1 \
  -c:v libx264 -tune stillimage -pix_fmt yuv420p -preset $QUAL -r $FPS -g $(($FPS *2)) -b:v $VBR \
- -c:a $AUDIO_ENCODER -threads $THREADS -ar 44100 -b:a 128k -bufsize 512k -pix_fmt yuv420p \
+ -c:a $AUDIO_ENCODER -threads $(nproc) -ar 44100 -b:a 128k -bufsize 512k -pix_fmt yuv420p \
  -f flv $YOUTUBE_URL/$YOUTUBE_KEY
