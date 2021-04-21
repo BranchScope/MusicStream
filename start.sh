@@ -28,5 +28,5 @@ ffmpeg \
  -i list.txt \
  -loop -1 \
  -c:v libx264 -tune stillimage -pix_fmt yuv420p -preset $QUAL -r $FPS -g $(($FPS *2)) -b:v $VBR \
- -c:a $AUDIO_ENCODER -threads $(nproc) -ar 44100 -b:a 128k -bufsize 512k -pix_fmt yuv420p \
+ -c:a $AUDIO_ENCODER -threads $(nproc) -ar 44100 -b:a 192k -bufsize 512k -pix_fmt yuv420p \
  -f flv $RTMP_URL/$STREAM_KEY
