@@ -19,4 +19,4 @@ Just change following variables in `start.sh`:
 `sh start.sh` :)
 
 ## Tips
-- Use a low bitrate (also like 200k) and a 1280x720 JPG image if you don't want to start a fire in the machine's datacenter :)
+- Use a low bitrate (also like 200k) and a 1280x720 JPG image if you don't want to transform your machine's datacenter in Naples on new year's eve :)
